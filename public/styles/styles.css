@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  color: orange;
+  background-color: white;
+  scroll-behavior: smooth;
+}
+
+/*
+ * Header
+ */
+header {
+  background-color: blueviolet;
+  padding: 1rem;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+header .layout-block {
+  flex: 0 0 20vw;
+}
+
+.social-navbar {
+  margin-top: auto;
+  display: flex;
+  gap: 1rem;
+}
+.social-navbar img {
+  width: 100%;
+}
+.social-navbar img:hover {
+  background-color: darkslateblue;
+}
+
+/* 
+ * Profile bar and Main section
+ */
+.main-flex {
+  display: flex;
+  width: 100%;
+  min-height: 100%;
+}
+.main-flex > {
+  padding: 2rem;
+}
+
+aside {
+  background: radial-gradient(75% 205% at right bottom, transparent 50%, orange 51%);
+  color: white;
+  box-shadow: darkorange;
+  z-index: 3;
+  flex: 0 1 30vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+aside .profile-picture {
+  max-width: 60%;
+}
+aside .profile-picture img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 50%;
+}
+
+main {
+  background-color: white;
+  padding-top: 5rem;
+  flex: 1 1 auto;
+}
+
+/*# sourceMappingURL=styles.css.map */

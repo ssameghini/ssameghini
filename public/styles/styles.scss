@@ -1,0 +1,96 @@
+// Definiciones de valores globales
+$primaryColor: orange;
+$secondaryColor: blueviolet;
+$sideBarLength: 30vw;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    color: $primaryColor;
+    background-color: white; // For testing purposes
+    scroll-behavior: smooth;
+}
+
+/*
+ * Header
+ */
+
+header {
+    background-color: $secondaryColor;
+    padding: 1rem;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    .layout-block {
+        flex: 0 0 ($sideBarLength - 10vw);
+    }
+}
+
+.social-navbar {
+    margin-top: auto;
+    display: flex;
+    gap: 1rem;
+
+    img {
+        width: 100%;
+
+        &:hover {
+            background-color: darkslateblue;
+        }
+    }
+}
+
+/* 
+ * Profile bar and Main section
+ */
+
+.main-flex {
+    display: flex;
+    width: 100%;
+    min-height: 100%;
+
+    & > {
+        padding: 2rem;
+    }
+}
+
+// Aside Profile bar
+
+aside {
+    background: radial-gradient(75% 205% at right bottom, transparent 50%, $primaryColor 51%);
+    color: white;
+    box-shadow: darkorange;
+    z-index: 3;
+    flex: 0 1 $sideBarLength;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    .profile-picture {
+        max-width: 60%;
+        
+        img {
+            object-fit: cover;
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+}
+
+// Main presentation section
+
+main {
+    background-color: white;
+    padding-top: 5rem;
+    flex: 1 1 auto;
+}

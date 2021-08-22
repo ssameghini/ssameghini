@@ -1,0 +1,32 @@
+{
+  "name": "ssameghini",
+  "version": "1.0.0",
+  "description": "My GitHub profile page",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass --watch public/styles",
+    "dev": "nodemon ./index.js && sass --watch public/styles",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssameghini/ssameghini.git"
+  },
+  "keywords": [
+    "ssameghini",
+    "profile",
+    "portfolio"
+  ],
+  "author": "Sebastian Sameghini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssameghini/ssameghini/issues"
+  },
+  "homepage": "https://github.com/ssameghini/ssameghini#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
